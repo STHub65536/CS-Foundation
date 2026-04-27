@@ -10,10 +10,6 @@ namespace Ex_03_07.Models
     /// </summary>
     public class Item
     {
-        private int itemNo;
-        private string itemName;
-        private int price;
-
         public int ItemNo{ get; set; }
         public string ItemName{ get; set; }
         public int Price{ get; set; }
