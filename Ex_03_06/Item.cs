@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ex_03_04
+namespace Ex_03_06
 {
     /// <summary>
     /// 商品情報を表すクラス
@@ -14,6 +14,18 @@ namespace Ex_03_04
         public string itemName;
         public int price;
         public double salesTaxRate = 0.10;
+
+        public Item(int pitemNo, string pitemName, int pprice)
+        {
+            this.itemNo = pitemNo;
+            this.itemName = pitemName;
+            this.price = pprice;
+        }
+
+        public Item()
+        {
+            
+        }
 
         public void Print()
         {
@@ -26,6 +38,11 @@ namespace Ex_03_04
         public void ChangePrice(int price)
         {
             this.price = price;
+        }
+
+        public void ChangePrice(string price)
+        {
+            this.price = int.Parse(price);
         }
 
         public int CalculateTaxAmount()

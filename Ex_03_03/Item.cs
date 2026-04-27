@@ -16,6 +16,7 @@ namespace Ex_03_03
 
         public void Print()
         {
+            Console.WriteLine("結果");
             Console.WriteLine("商品番号="+this.itemNo);
             Console.WriteLine("商品名="+this.itemName);
             Console.WriteLine("単価="+this.price);
