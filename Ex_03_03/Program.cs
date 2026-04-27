@@ -1,4 +1,4 @@
-﻿namespace Ex_02_01;
+﻿namespace Ex_03_03;
 
 static class Program
 {
