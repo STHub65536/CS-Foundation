@@ -15,10 +15,6 @@ static class Program
         {
             Console.WriteLine("値1 / 値2 = "+calc.Div(num1, num2));
         }
-        else
-        {
-            Console.WriteLine("例外:Attempted to divide by zero.");
-        }
         
     }
 }

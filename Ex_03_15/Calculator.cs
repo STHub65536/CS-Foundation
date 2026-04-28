@@ -17,6 +17,7 @@ namespace Ex_03_15
             }
             catch(DivideByZeroException)
             {
+                Console.WriteLine("例外:Attempted to divide by zero.");
                 return null;
             }
         }

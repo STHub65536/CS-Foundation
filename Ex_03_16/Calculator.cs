@@ -7,13 +7,13 @@ namespace Ex_03_16
 {
     public class Calculator
     {
-        public int Div(int x, int y)
+        public int? Div(int x, int y)
         {
             int answer = 0;
 
             if(x <= 0)
             {
-                throw new InputParameterLessThanZeroException(x);
+                throw InputParameterLessThanZeroException(x);
             }
 
             try
@@ -22,7 +22,12 @@ namespace Ex_03_16
             }
             catch(DivideByZeroException)
             {
-                throw;
+                
+                return null;
+            }
+            catch (FormatException)
+            {
+                
             }
             
             return answer;
