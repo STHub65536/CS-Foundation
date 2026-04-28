@@ -11,23 +11,19 @@ namespace Ex_03_16
         {
             int answer = 0;
 
-            if(x <= 0)
-            {
-                throw InputParameterLessThanZeroException(x);
-            }
-
             try
             {
+                if(x <= 0)
+                {
+                    throw new InputParameterLessThanZeroException(x);
+                }
+
                 answer = x / y;
             }
             catch(DivideByZeroException)
             {
-                
+                Console.WriteLine("例外:Attempted to divide by zero.");
                 return null;
-            }
-            catch (FormatException)
-            {
-                
             }
             
             return answer;
