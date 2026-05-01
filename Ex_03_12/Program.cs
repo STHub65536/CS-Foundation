@@ -6,12 +6,14 @@ static class Program
 {
     static void Main(string[] args)
     {
+        Player player;
+
         Console.Write("DVDのタイトルを入力してください->");
-        Player dvdPlayer = new DVDPlayer(Console.ReadLine());
-        dvdPlayer.UseMachine();
+        player = new DVDPlayer(Console.ReadLine());
+        player.UseMachine();
 
         Console.Write("Blu-rayのタイトルを入力してください->");
-        Player blurayPlayer = new BlurayPlayer(Console.ReadLine());
-        blurayPlayer.UseMachine();
+        player = new BlurayPlayer(Console.ReadLine());
+        player.UseMachine();
     }
 }
