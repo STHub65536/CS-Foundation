@@ -11,9 +11,13 @@ static class Program
         Console.Write("値2を入力してください->");
         int num2 = int.Parse(Console.ReadLine());
 
-        if(calc.Div(num1, num2) != null)
+        try
         {
             Console.WriteLine("値1 / 値2 = "+calc.Div(num1, num2));
+        }
+        catch(DivideByZeroException)
+        {
+            Console.WriteLine("例外:Attempted to divide by zero.");
         }
         
     }

@@ -7,7 +7,7 @@ namespace Ex_03_15
 {
     public class Calculator
     {
-        public int? Div(int x, int y)
+        public int Div(int x, int y)
         {
             int answer = 0;
             try
@@ -17,8 +17,7 @@ namespace Ex_03_15
             }
             catch(DivideByZeroException)
             {
-                Console.WriteLine("例外:Attempted to divide by zero.");
-                return null;
+                throw new DivideByZeroException();
             }
         }
     }
