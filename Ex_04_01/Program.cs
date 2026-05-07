@@ -10,9 +10,9 @@ static class Program
 
         Console.Write("商品番号を入力してください->");
         item.ItemNo = int.Parse(Console.ReadLine());
-        Console.Write("商品番号を入力してください->");
+        Console.Write("商品名を入力してください->");
         item.ItemName = Console.ReadLine();
-        Console.Write("商品番号を入力してください->");
+        Console.Write("単価を入力してください->");
         item.Price = int.Parse(Console.ReadLine());
 
         Console.WriteLine("結果");
